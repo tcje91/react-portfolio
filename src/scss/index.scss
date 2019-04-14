@@ -3,11 +3,40 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
 }
 
 body {
   color: $primary-colour;
   background: $background-colour;
   font-family: $main-font;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+h1, h2, h3 {
+  margin: 0;
+
+  &.lrg-heading {
+    font-size: 6rem;
+  }
+
+}
+
+.text-highlight {
+  color: $secondary-colour;
+}
+
+.home {
+  height: 100%;
+  padding: 4rem;
+
+  .icon {
+    margin: 0.5rem;
+    @include easeInOut;
+
+    &:hover {
+      color: $secondary-colour;
+    }
+  }
 }
