@@ -4,8 +4,7 @@ import * as BrandIcons from '@fortawesome/free-brands-svg-icons';
 
 
 const Home = () => (
-  <div className="home">
-    <h1>Home</h1>
+  <div className="home content-container">
     <h1 className="lrg-heading">
       Joe
       {' '}

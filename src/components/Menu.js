@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MenuBtn from './MenuBtn';
+import NavItems from './NavItems';
 
 export default class Menu extends Component {
   state = {
@@ -14,8 +15,9 @@ export default class Menu extends Component {
     const { showMenu } = this.state;
 
     return (
-      <div>
+      <div className="menu">
         <MenuBtn showMenu={showMenu} toggleMenu={this.toggleMenu} />
+        <NavItems showMenu={showMenu} />
       </div>
     );
   }

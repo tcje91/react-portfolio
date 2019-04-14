@@ -12,6 +12,7 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
+  line-height: 1.5;
 }
 
 h1, h2, h3 {
@@ -27,9 +28,13 @@ h1, h2, h3 {
   color: $secondary-colour;
 }
 
-.home {
+.content-container {
   height: 100%;
   padding: 4rem;
+}
+
+.home {
+  margin-top: 30vh;
 
   .icon {
     margin: 0.5rem;
