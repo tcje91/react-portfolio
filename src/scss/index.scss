@@ -20,6 +20,11 @@ h1, h2, h3 {
 
   &.lrg-heading {
     font-size: 6rem;
+    line-height: 4rem;
+  }
+
+  &.med-heading {
+    font-size: 2rem;
   }
 
 }
