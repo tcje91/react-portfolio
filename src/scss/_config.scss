@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
 $primary-colour: #fff;
 $secondary-colour: red;
 $background-colour: #2c2c2c;
+$main-font: 'Nunito', sans-serif;
 
 @mixin easeInOut {
   transition: ease-in-out 300ms;
