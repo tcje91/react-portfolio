@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Nunito|Oswald');
 
 $primary-colour: #fff;
 $secondary-colour: #21acb9;
 $background-colour: #2c2c2c;
 $main-font: 'Nunito', sans-serif;
+$caps-font: 'Oswald', sans-serif;
 
 @mixin easeInOut {
   transition: ease-in-out 300ms;

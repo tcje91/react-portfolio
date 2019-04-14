@@ -1,3 +1,17 @@
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 90px;
+  background: lighten($background-colour, 5);
+  @include easeInOut;
+
+  &.open {
+    width: 180px;
+  }
+}
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -50,7 +64,11 @@
 
 .nav-item {
   color: $primary-colour;
-  font-weight: bold;
+  font-weight: 100;
+  line-height: 3.5rem;
+  font-family: $caps-font;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
   display: inline-block;
   text-decoration: none;
   font-size: 1.5rem;
@@ -67,10 +85,14 @@
     transform: translate3d(0, 0, 0);
   }
 
+  &.selected {
+    text-decoration: underline;
+  }
+
 }
 
-@for $i from 1 through 7 {
-  .nav-item:nth-child(#{$i}) {
-    transition-delay: $i * 20ms;
+@for $i from 1 through 4 {
+  .nav-item:nth-of-type(#{$i}) {
+    transition-delay: $i * 30ms;
   }
 }
