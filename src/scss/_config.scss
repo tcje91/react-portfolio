@@ -1,1 +1,7 @@
-$primary-colour: red;
+$primary-colour: #fff;
+$secondary-colour: red;
+$background-colour: #2c2c2c;
+
+@mixin easeInOut {
+  transition: ease-in-out 300ms;
+}

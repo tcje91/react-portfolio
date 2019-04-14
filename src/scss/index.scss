@@ -1,5 +1,12 @@
 @import 'config';
+@import 'menu';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
 body {
   color: $primary-colour;
+  background: $background-colour;
 }

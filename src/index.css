@@ -1,2 +1,31 @@
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+  transition: ease-in-out 300ms; }
+  .menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 4px 0;
+    background: #fff;
+    border-radius: 2px;
+    transition: ease-in-out 300ms; }
+  .menu-btn.close {
+    transform: rotate(180deg);
+    transition: ease-in-out 300ms; }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -4px); }
+
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
 body {
-  color: red; }
+  color: #fff;
+  background: #2c2c2c; }
