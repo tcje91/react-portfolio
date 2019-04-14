@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import { Router } from '@reach/router';
+import Home from './components/Home';
+import Work from './components/Work';
+import Contact from './components/Contact';
+import About from './components/About';
 
 class App extends Component {
   state = {
@@ -9,7 +14,12 @@ class App extends Component {
     const { showMenu } = this.state;
     return (
       <div className="App">
-        <h1>Hello world</h1>
+        <Router>
+          <Home path="/" />
+          <Work path="/work" />
+          <Contact path="/contact" />
+          <About path="/about" />
+        </Router>
         {showMenu && <p>menu!</p>}
       </div>
     );
