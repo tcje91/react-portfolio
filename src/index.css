@@ -18,12 +18,14 @@
   .menu-btn.close {
     transform: rotate(180deg);
     transition: ease-in-out 300ms; }
-    .menu-btn.close .btn-line:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px); }
-    .menu-btn.close .btn-line:nth-child(2) {
-      opacity: 0; }
-    .menu-btn.close .btn-line:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -4px); }
+    .menu-btn.close .btn-line {
+      height: 5px; }
+      .menu-btn.close .btn-line:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px); }
+      .menu-btn.close .btn-line:nth-child(2) {
+        opacity: 0; }
+      .menu-btn.close .btn-line:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -4px); }
 
 .nav-list {
   position: absolute;

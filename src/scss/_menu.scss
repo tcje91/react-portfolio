@@ -24,8 +24,10 @@
     @include easeInOut;
 
     .btn-line {
+      height: 5px;
+
       &:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
+        transform: rotate(45deg) translate(8px, 8px);
       }
 
       &:nth-child(2) {
