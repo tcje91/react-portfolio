@@ -9,3 +9,9 @@ $caps-font: 'Oswald', sans-serif;
 @mixin easeInOut {
   transition: ease-in-out 300ms;
 }
+
+@mixin mediaSml {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}

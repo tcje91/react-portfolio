@@ -1,0 +1,19 @@
+@include mediaSml {
+  .content-container {
+      padding: 2rem;
+      margin-top: 10vh;
+  }
+
+  .menu {
+    width: 0px;
+    background: rgba(lighten($background-colour, 15), 0.9);
+
+    .menu-btn {
+      position: fixed;
+    }
+  }
+
+  .home {
+    margin-top: 10vh;
+  }
+}

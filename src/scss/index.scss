@@ -18,16 +18,16 @@ body {
 
 h1, h2, h3 {
   margin: 0;
-
+  
   &.lrg-heading {
     font-size: 6rem;
     line-height: 5rem;
   }
-
+  
   &.med-heading {
     font-size: 2rem;
   }
-
+  
 }
 
 .text-highlight {
@@ -41,7 +41,7 @@ h1, h2, h3 {
 
 .home {
   margin-top: 20vh;
-
+  
   .icon {
     margin: 0.5rem;
     @include easeInOut;
@@ -59,7 +59,7 @@ h1, h2, h3 {
   justify-content: center;
   align-items: center;
   padding: 0 2vw;
-
+  
   .project-tile {
     width: 280px;
     text-align: center;
@@ -72,26 +72,26 @@ h1, h2, h3 {
       font-size: 1.3rem;
       margin: 0
     }
-
+    
     &:hover {
       background: lighten($background-colour, 5);
       .project-tile-title {
         color: $secondary-colour;
       }
     }
-
+    
     .project-img {
       width:  240px;
       height: 150px;
       background: #fff;
       margin: 0.5rem auto;
     }
-
+    
   }
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,10 +99,12 @@ h1, h2, h3 {
   left: 0;
   width: 100%;
   text-align: center;
-
+  background: $background-colour;
+  
   .icon {
     margin: 0.5rem;
   }
 }
 
+@import 'responsive';
 

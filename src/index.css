@@ -211,13 +211,26 @@ h1, h2, h3 {
       margin: 0.5rem auto; }
 
 .footer {
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   bottom: 0;
   left: 0;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  background: #2c2c2c; }
   .footer .icon {
     margin: 0.5rem; }
+
+@media screen and (max-width: 500px) {
+  .content-container {
+    padding: 2rem;
+    margin-top: 10vh; }
+  .menu {
+    width: 0px;
+    background: rgba(82, 82, 82, 0.9); }
+    .menu .menu-btn {
+      position: fixed; }
+  .home {
+    margin-top: 10vh; } }
