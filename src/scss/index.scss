@@ -40,7 +40,7 @@ h1, h2, h3 {
 }
 
 .home {
-  margin-top: 30vh;
+  margin-top: 20vh;
 
   .icon {
     margin: 0.5rem;
@@ -71,7 +71,6 @@ h1, h2, h3 {
 
     &:hover {
       background: lighten($background-colour, 5);
-      
       .project-tile-title {
         color: $secondary-colour;
       }
@@ -85,7 +84,21 @@ h1, h2, h3 {
     }
 
   }
+}
 
+.footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+
+  .icon {
+    margin: 0.5rem;
+  }
 }
 
 

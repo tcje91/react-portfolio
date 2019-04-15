@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import About from './components/About';
 import Menu from './components/Menu';
 import NotFound from './components/NotFound';
+import Footer from './components/Footer';
 
 const App = () => (
   <div className="App">
@@ -18,6 +19,7 @@ const App = () => (
       <About path="/about" />
       <NotFound path="/*" />
     </Router>
+    <Footer />
   </div>
 );
 
