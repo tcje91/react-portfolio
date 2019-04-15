@@ -13,7 +13,7 @@ export default class Menu extends Component {
   }
 
   updateSelected = (page) => {
-    this.setState({ selected: page });
+    this.setState({ selected: page, showMenu: false });
   }
 
   render() {

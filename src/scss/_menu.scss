@@ -4,7 +4,7 @@
   right: 0;
   height: 100%;
   width: 90px;
-  background: lighten($background-colour, 5);
+  background: rgba(lighten($background-colour, 15), 0.5);
   overflow: hidden;
   @include easeInOut;
 

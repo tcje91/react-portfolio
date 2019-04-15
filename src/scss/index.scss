@@ -86,12 +86,46 @@ h1, h2, h3 {
   height: 100vh;
   width: 100vw;
   background: $background-colour;
-  opacity: 0.8;
+  opacity: 0;
   z-index: 1;
   visibility: hidden;
   @include easeInOut;
 
   &.show {
     visibility: visible;
+    opacity: 0.75;
+  }
+}
+
+.popup-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+
+  &.show {
+    visibility: visible;
+  }
+}
+
+.project-details {
+  transform: translate3d(0, 1000px, 0);
+  @include easeInOut;
+  z-index: 3;
+  height: 600px;
+  width: 800px;
+  border: #fff solid 3px;
+  background: $background-colour;
+  padding: 2rem;
+
+  &.show {
+    transform: translate3d(0, 0, 0);
   }
 }
