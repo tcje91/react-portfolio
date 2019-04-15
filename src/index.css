@@ -130,15 +130,16 @@
     transition: ease-in-out 300ms; }
     .project-details .close-btn:hover .line {
       background: #21acb9; }
+    .project-details .close-btn:hover {
+      transform: rotate(90deg); }
     .project-details .close-btn .line {
       position: absolute;
-      top: 45%;
+      top: 43%;
       height: 5px;
       width: 100%;
       background: #fff;
       border-radius: 2px;
-      transition: ease-in-out 300ms;
-      margin: -1px; }
+      transition: ease-in-out 300ms; }
       .project-details .close-btn .line.one {
         transform: rotate(45deg); }
       .project-details .close-btn .line.two {

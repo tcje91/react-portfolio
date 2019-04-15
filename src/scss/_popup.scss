@@ -59,16 +59,19 @@
       &:hover .line {
         background: $secondary-colour;
       }
+
+      &:hover {
+        transform: rotate(90deg);
+      }
   
       .line {
         position: absolute;
-        top: 45%;
+        top: 43%;
         height: 5px;
         width: 100%;
         background: $primary-colour;
         border-radius: 2px;
         @include easeInOut;
-        margin: -1px;
   
         &.one {
           transform: rotate(45deg);
