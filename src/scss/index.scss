@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import 'popup';
 
 * {
   box-sizing: border-box;
@@ -20,7 +21,7 @@ h1, h2, h3 {
 
   &.lrg-heading {
     font-size: 6rem;
-    line-height: 4rem;
+    line-height: 5rem;
   }
 
   &.med-heading {
@@ -44,6 +45,7 @@ h1, h2, h3 {
   .icon {
     margin: 0.5rem;
     @include easeInOut;
+    cursor: pointer;
 
     &:hover {
       color: $secondary-colour;
@@ -65,9 +67,14 @@ h1, h2, h3 {
     margin: 1rem;
     border: $primary-colour solid 3px;
     cursor: pointer;
+    @include easeInOut;
 
     &:hover {
-      background: lighten($background-colour, 15);
+      background: lighten($background-colour, 5);
+      
+      .project-tile-title {
+        color: $secondary-colour;
+      }
     }
 
     .project-img {
@@ -76,56 +83,9 @@ h1, h2, h3 {
       background: #fff;
       margin: 1rem auto;
     }
+
   }
 
 }
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  background: $background-colour;
-  opacity: 0;
-  z-index: 1;
-  visibility: hidden;
-  @include easeInOut;
 
-  &.show {
-    visibility: visible;
-    opacity: 0.75;
-  }
-}
 
-.popup-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  visibility: hidden;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-
-  &.show {
-    visibility: visible;
-  }
-}
-
-.project-details {
-  transform: translate3d(0, 1000px, 0);
-  @include easeInOut;
-  z-index: 3;
-  height: 600px;
-  width: 800px;
-  border: $primary-colour solid 3px;
-  background: $background-colour;
-  padding: 2rem;
-
-  &.show {
-    transform: translate3d(0, 0, 0);
-  }
-}

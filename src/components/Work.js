@@ -20,7 +20,12 @@ class Work extends Component {
     const { selectedProject } = this.state;
     return (
       <div className="work content-container">
-        <h1>Work</h1>
+        <h1 className="lrg-heading">
+          My
+          {' '}
+          <span className="text-highlight">Work</span>
+        </h1>
+        <h3 className="med-heading">Some of my recent projects</h3>
         <div className="project-showcase">
           {projects.map(project => <ProjectTile key={project.id} project={project} onClickProject={this.onClickProject} />)}
         </div>

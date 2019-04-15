@@ -7,7 +7,7 @@
   background: rgba(lighten($background-colour, 15), 0.5);
   overflow: hidden;
   @include easeInOut;
-  z-index: 2;
+  z-index: 4;
 
   &.open {
     width: 180px;
@@ -51,7 +51,7 @@
       }
 
       &:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -4px);;
+        transform: rotate(-45deg) translate(5px, -4px);
       }
     }
   }

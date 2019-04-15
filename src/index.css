@@ -8,7 +8,7 @@
   background: rgba(82, 82, 82, 0.5);
   overflow: hidden;
   transition: ease-in-out 300ms;
-  z-index: 2; }
+  z-index: 4; }
   .menu.open {
     width: 180px; }
 
@@ -80,62 +80,6 @@
 .nav-item:nth-of-type(4) {
   transition-delay: 120ms; }
 
-* {
-  box-sizing: border-box; }
-
-body {
-  color: #fff;
-  background: #2c2c2c;
-  font-family: "Nunito", sans-serif;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  line-height: 1.5; }
-
-h1, h2, h3 {
-  margin: 0; }
-  h1.lrg-heading, h2.lrg-heading, h3.lrg-heading {
-    font-size: 6rem;
-    line-height: 4rem; }
-  h1.med-heading, h2.med-heading, h3.med-heading {
-    font-size: 2rem; }
-
-.text-highlight {
-  color: #21acb9; }
-
-.content-container {
-  height: 100%;
-  padding: 8rem; }
-
-.home {
-  margin-top: 30vh; }
-  .home .icon {
-    margin: 0.5rem;
-    transition: ease-in-out 300ms; }
-    .home .icon:hover {
-      color: #21acb9; }
-
-.project-showcase {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 0 2vw; }
-  .project-showcase .project-tile {
-    width: 280px;
-    text-align: center;
-    padding: 1rem;
-    margin: 1rem;
-    border: #fff solid 3px;
-    cursor: pointer; }
-    .project-showcase .project-tile:hover {
-      background: #525252; }
-    .project-showcase .project-tile .project-img {
-      width: 240px;
-      height: 150px;
-      background: #fff;
-      margin: 1rem auto; }
-
 .overlay {
   position: absolute;
   top: 0;
@@ -177,3 +121,87 @@ h1, h2, h3 {
   padding: 2rem; }
   .project-details.show {
     transform: translate3d(0, 0, 0); }
+  .project-details .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 28px;
+    width: 28px;
+    transition: ease-in-out 300ms; }
+    .project-details .close-btn:hover .line {
+      background: #21acb9; }
+    .project-details .close-btn .line {
+      position: absolute;
+      top: 45%;
+      height: 5px;
+      width: 100%;
+      background: #fff;
+      border-radius: 2px;
+      transition: ease-in-out 300ms;
+      margin: -1px; }
+      .project-details .close-btn .line.one {
+        transform: rotate(45deg); }
+      .project-details .close-btn .line.two {
+        transform: rotate(-45deg); }
+  .project-details .project-title {
+    text-align: center; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  color: #fff;
+  background: #2c2c2c;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  line-height: 1.5; }
+
+h1, h2, h3 {
+  margin: 0; }
+  h1.lrg-heading, h2.lrg-heading, h3.lrg-heading {
+    font-size: 6rem;
+    line-height: 5rem; }
+  h1.med-heading, h2.med-heading, h3.med-heading {
+    font-size: 2rem; }
+
+.text-highlight {
+  color: #21acb9; }
+
+.content-container {
+  height: 100%;
+  padding: 8rem; }
+
+.home {
+  margin-top: 30vh; }
+  .home .icon {
+    margin: 0.5rem;
+    transition: ease-in-out 300ms;
+    cursor: pointer; }
+    .home .icon:hover {
+      color: #21acb9; }
+
+.project-showcase {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2vw; }
+  .project-showcase .project-tile {
+    width: 280px;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    border: #fff solid 3px;
+    cursor: pointer;
+    transition: ease-in-out 300ms; }
+    .project-showcase .project-tile:hover {
+      background: #393939; }
+      .project-showcase .project-tile:hover .project-tile-title {
+        color: #21acb9; }
+    .project-showcase .project-tile .project-img {
+      width: 240px;
+      height: 150px;
+      background: #fff;
+      margin: 1rem auto; }
