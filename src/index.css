@@ -7,7 +7,8 @@
   width: 90px;
   background: rgba(82, 82, 82, 0.5);
   overflow: hidden;
-  transition: ease-in-out 300ms; }
+  transition: ease-in-out 300ms;
+  z-index: 2; }
   .menu.open {
     width: 180px; }
 
@@ -151,7 +152,7 @@ h1, h2, h3 {
     opacity: 0.75; }
 
 .popup-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;

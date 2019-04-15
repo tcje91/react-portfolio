@@ -7,6 +7,7 @@
   background: rgba(lighten($background-colour, 15), 0.5);
   overflow: hidden;
   @include easeInOut;
+  z-index: 2;
 
   &.open {
     width: 180px;
