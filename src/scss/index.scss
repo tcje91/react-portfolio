@@ -63,11 +63,15 @@ h1, h2, h3 {
   .project-tile {
     width: 280px;
     text-align: center;
-    padding: 1rem;
+    padding: 0.8rem;
     margin: 1rem;
     border: $primary-colour solid 3px;
     cursor: pointer;
     @include easeInOut;
+    .project-tile-title {
+      font-size: 1.3rem;
+      margin: 0
+    }
 
     &:hover {
       background: lighten($background-colour, 5);
@@ -80,7 +84,7 @@ h1, h2, h3 {
       width:  240px;
       height: 150px;
       background: #fff;
-      margin: 1rem auto;
+      margin: 0.5rem auto;
     }
 
   }

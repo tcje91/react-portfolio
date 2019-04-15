@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito|Oswald");
 .menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   height: 100%;
@@ -192,11 +192,14 @@ h1, h2, h3 {
   .project-showcase .project-tile {
     width: 280px;
     text-align: center;
-    padding: 1rem;
+    padding: 0.8rem;
     margin: 1rem;
     border: #fff solid 3px;
     cursor: pointer;
     transition: ease-in-out 300ms; }
+    .project-showcase .project-tile .project-tile-title {
+      font-size: 1.3rem;
+      margin: 0; }
     .project-showcase .project-tile:hover {
       background: #393939; }
       .project-showcase .project-tile:hover .project-tile-title {
@@ -205,7 +208,7 @@ h1, h2, h3 {
       width: 240px;
       height: 150px;
       background: #fff;
-      margin: 1rem auto; }
+      margin: 0.5rem auto; }
 
 .footer {
   position: absolute;
