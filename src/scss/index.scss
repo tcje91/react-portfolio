@@ -35,7 +35,7 @@ h1, h2, h3 {
 
 .content-container {
   height: 100%;
-  padding: 4rem;
+  padding: 8rem;
 }
 
 .home {
@@ -48,5 +48,50 @@ h1, h2, h3 {
     &:hover {
       color: $secondary-colour;
     }
+  }
+}
+
+.project-showcase {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2vw;
+
+  .project-tile {
+    width: 280px;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    border: $primary-colour solid 3px;
+    cursor: pointer;
+
+    &:hover {
+      background: lighten($background-colour, 15);
+    }
+
+    .project-img {
+      width:  240px;
+      height: 150px;
+      background: #fff;
+      margin: 1rem auto;
+    }
+  }
+
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: $background-colour;
+  opacity: 0.8;
+  z-index: 1;
+  visibility: hidden;
+  @include easeInOut;
+
+  &.show {
+    visibility: visible;
   }
 }

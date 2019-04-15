@@ -5,6 +5,7 @@
   height: 100%;
   width: 90px;
   background: lighten($background-colour, 5);
+  overflow: hidden;
   @include easeInOut;
 
   &.open {
@@ -60,6 +61,7 @@
   right: 30px;
   top: 70px;
   text-align: right;
+  z-index: 3;
 }
 
 .nav-item {
