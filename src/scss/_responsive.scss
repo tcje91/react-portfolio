@@ -25,4 +25,35 @@
   .img-overlay {
     visibility: hidden;
   }
+
+  h1, h2, h3 {
+    margin: 0;
+    
+    &.lrg-heading {
+      font-size: 4rem;
+      line-height: 3rem;
+    }
+    
+    &.med-heading {
+      font-size: 1.5rem;
+    }
+    
+  }
+  .project-details {
+    .img-wrapper-med {
+      width: 300px;
+      height: auto;
+      margin-top: 1.5rem;
+
+      .project-img-med {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  p {
+    font-size: 80%;
+    margin: 0;
+  }
 }

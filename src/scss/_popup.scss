@@ -43,6 +43,10 @@
     border: $primary-colour solid 3px;
     background: $background-colour;
     padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
   
     &.show {
       transform: translate3d(0, 0, 0);
@@ -85,5 +89,9 @@
 
     .project-title {
       text-align: center;
+    }
+
+    .img-wrapper-med {
+      width: 480px;
     }
   }
