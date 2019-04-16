@@ -41,10 +41,11 @@
     height: 600px;
     width: 800px;
     border: $primary-colour solid 3px;
+    border-radius: 6px;
     background: $background-colour;
     padding: 2rem;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
   
@@ -93,5 +94,18 @@
 
     .img-wrapper-med {
       width: 480px;
+      margin: auto;
+    }
+
+    .tech-list {
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+
+      .icon {
+        margin: 0.5rem;
+      }
     }
   }
