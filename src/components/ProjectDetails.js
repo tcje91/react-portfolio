@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import * as BrandIcons from '@fortawesome/free-brands-svg-icons';
+import BrandIcons from '../misc/icons';
 
 const ProjectDetails = ({ onCloseProject, show, project }) => (
   <div className={`project-details ${show ? 'show' : ''}`}>
