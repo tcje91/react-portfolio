@@ -190,6 +190,7 @@ h1, h2, h3 {
   align-items: center;
   padding: 0 2vw; }
   .project-showcase .project-tile {
+    position: relative;
     width: 280px;
     text-align: center;
     padding: 0.8rem;
@@ -199,16 +200,37 @@ h1, h2, h3 {
     transition: ease-in-out 300ms; }
     .project-showcase .project-tile .project-tile-title {
       font-size: 1.3rem;
-      margin: 0; }
+      margin: 0;
+      transition: ease-in-out 300ms; }
     .project-showcase .project-tile:hover {
       background: #393939; }
       .project-showcase .project-tile:hover .project-tile-title {
         color: #21acb9; }
-    .project-showcase .project-tile .project-img {
+      .project-showcase .project-tile:hover .img-overlay {
+        opacity: 0; }
+    .project-showcase .project-tile .project-img-div {
       width: 240px;
       height: 150px;
       background: #fff;
-      margin: 0.5rem auto; }
+      position: relative; }
+    .project-showcase .project-tile .img-container {
+      width: 240px;
+      height: 150px;
+      position: relative;
+      margin: auto; }
+    .project-showcase .project-tile .project-img {
+      width: 100%;
+      height: auto; }
+    .project-showcase .project-tile .img-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 240px;
+      height: 150px;
+      background: #2c2c2c;
+      z-index: 2;
+      opacity: 0.4;
+      transition: ease-in-out 300ms; }
 
 .footer {
   position: fixed;
@@ -236,4 +258,6 @@ h1, h2, h3 {
     margin-top: 10vh; }
   .project-details {
     margin: 4rem 1rem 0 1rem;
-    height: 450px; } }
+    height: 450px; }
+  .img-overlay {
+    visibility: hidden; } }
