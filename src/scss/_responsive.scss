@@ -60,4 +60,18 @@
     font-size: 80%;
     margin: 0;
   }
+
+  .menu .menu-btn {
+    background: rgba($background-colour, 0.5);
+    z-index: 2;
+    border-radius: 6px;
+
+    &.close {
+      background: rgba($background-colour, 0);
+    }
+
+    .btn-line {
+      z-index: 3;
+    }
+  }
 }
