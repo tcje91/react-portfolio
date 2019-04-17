@@ -81,7 +81,7 @@
   transition-delay: 120ms; }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
@@ -286,7 +286,7 @@ h1, h2, h3 {
   .home {
     margin-top: 10vh; }
   .project-details {
-    margin: 4rem 1rem 0 1rem;
+    margin: 0 1rem 0 1rem;
     max-height: 85vh; }
   .img-overlay {
     visibility: hidden; }
