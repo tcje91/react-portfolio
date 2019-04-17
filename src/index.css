@@ -5,7 +5,7 @@
   right: 0;
   height: 100%;
   width: 90px;
-  background: rgba(82, 82, 82, 0.5);
+  background: rgba(70, 70, 70, 0.5);
   overflow: hidden;
   transition: ease-in-out 300ms;
   z-index: 4; }
@@ -49,7 +49,7 @@
 
 .nav-item {
   color: #fff;
-  font-weight: 100;
+  font-weight: 800;
   line-height: 3.5rem;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
@@ -280,7 +280,7 @@ h1, h2, h3 {
     margin-top: 10vh; }
   .menu {
     width: 0px;
-    background: rgba(82, 82, 82, 0.9); }
+    background: rgba(70, 70, 70, 0.9); }
     .menu .menu-btn {
       position: fixed; }
   .home {

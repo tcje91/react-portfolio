@@ -4,7 +4,7 @@
   right: 0;
   height: 100%;
   width: 90px;
-  background: rgba(lighten($background-colour, 15), 0.5);
+  background: rgba(lighten($background-colour, 10), 0.5);
   overflow: hidden;
   @include easeInOut;
   z-index: 4;
@@ -67,7 +67,7 @@
 
 .nav-item {
   color: $primary-colour;
-  font-weight: 100;
+  font-weight: 800;
   line-height: 3.5rem;
   font-family: $caps-font;
   text-transform: uppercase;

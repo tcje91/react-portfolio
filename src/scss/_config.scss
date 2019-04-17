@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Oswald');
 
-$primary-colour: #fff;
 $secondary-colour: #21acb9;
 $background-colour: #2c2c2c;
+
+@function set-primary($colour) {
+  @if (lightness($colour) > 40) {
+    @return #2c2c2c;
+  } @else {
+    @return #fff;
+  }
+}
+
+$primary-colour: set-primary($background-colour);
 $main-font: 'Nunito', sans-serif;
 $caps-font: 'Oswald', sans-serif;
 
