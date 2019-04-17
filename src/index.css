@@ -170,6 +170,13 @@
 * {
   box-sizing: border-box; }
 
+html, body, #root {
+  height: 100%; }
+
+.App {
+  min-height: 100%;
+  position: relative; }
+
 a {
   color: #fff;
   text-decoration: none; }
@@ -198,14 +205,15 @@ h1, h2, h3 {
   height: 100%;
   padding: 8rem; }
 
-.home {
+.home .lrg-heading {
   margin-top: 20vh; }
-  .home .icon {
-    margin: 0.5rem;
-    transition: ease-in-out 300ms;
-    cursor: pointer; }
-    .home .icon:hover {
-      color: #21acb9; }
+
+.home .icon {
+  margin: 0.5rem;
+  transition: ease-in-out 300ms;
+  cursor: pointer; }
+  .home .icon:hover {
+    color: #21acb9; }
 
 .project-showcase {
   display: flex;
@@ -262,7 +270,7 @@ h1, h2, h3 {
       transition: ease-in-out 300ms; }
 
 .footer {
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,14 +284,13 @@ h1, h2, h3 {
 
 @media screen and (max-width: 768px) {
   .content-container {
-    padding: 2rem;
-    margin-top: 10vh; }
+    padding: 4rem 2rem 4rem 2rem; }
   .menu {
     width: 0px;
     background: rgba(70, 70, 70, 0.9); }
     .menu .menu-btn {
       position: fixed; }
-  .home {
+  .home .lrg-heading {
     margin-top: 10vh; }
   .project-details {
     margin: 0 1rem 0 1rem;

@@ -6,6 +6,15 @@
   box-sizing: border-box;
 }
 
+html, body, #root {
+  height: 100%;
+}
+
+.App {
+  min-height: 100%;
+  position: relative;
+}
+
 a {
   color: $primary-colour;
   text-decoration: none;
@@ -45,7 +54,9 @@ h1, h2, h3 {
 }
 
 .home {
-  margin-top: 20vh;
+  .lrg-heading {
+    margin-top: 20vh;
+  }
   
   .icon {
     margin: 0.5rem;
@@ -129,7 +140,7 @@ h1, h2, h3 {
 }
 
 .footer {
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
