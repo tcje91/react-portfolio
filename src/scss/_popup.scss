@@ -6,7 +6,7 @@
     width: 100vw;
     background: $background-colour;
     opacity: 0;
-    z-index: 1;
+    z-index: 4;
     visibility: hidden;
     @include easeInOut;
   
@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 5;
   
     &.show {
       visibility: visible;
@@ -37,7 +37,7 @@
   .project-details {
     transform: translate3d(0, 1000px, 0);
     @include easeInOut;
-    z-index: 3;
+    z-index: 5;
     height: 600px;
     width: 800px;
     border: $primary-colour solid 3px;
@@ -90,6 +90,11 @@
 
     .project-title {
       text-align: center;
+      @include capsHeading;
+    }
+
+    .project-desc {
+      text-align: justify;
     }
 
     .img-wrapper-med {

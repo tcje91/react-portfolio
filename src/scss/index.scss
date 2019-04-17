@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+a {
+  color: $primary-colour;
+  text-decoration: none;
+}
+
 body {
   color: $primary-colour;
   background: $background-colour;
@@ -66,7 +71,7 @@ h1, h2, h3 {
     text-align: center;
     padding: 1rem 1.5rem;
     margin: 1rem;
-    border: $primary-colour solid 3px;
+    border: $primary-colour solid 2px;
     border-radius: 6px;
     cursor: pointer;
     @include easeInOut;
@@ -74,6 +79,7 @@ h1, h2, h3 {
       font-size: 1.3rem;
       margin-top: 6px;
       margin-bottom: -10px;
+      @include capsHeading;
       @include easeInOut;
     }
     

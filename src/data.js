@@ -11,7 +11,7 @@ export const projects = [
   {
     id: 2,
     title: 'NC News',
-    desc: '"Northcoders News" is a full-stack project created on the Northcoders course. The front end is a single page responsive web app built in React, while the back end is an Node.js/Express server fed by a PostgreSQL database. The app functions as a news aggregation and commentary board, with additional features avaiable to a logged in user.',
+    desc: '"Northcoders News" is a full-stack project created on the Northcoders course. The front end is a single page responsive web app built in React, while the back end is an Node.js/Express server fed by a PostgreSQL database. The app functions as a news aggregation and commentary board, with additional features available to a logged in user.',
     descTest: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolor eum alias asperiores, earum labore pariatur officia sunt expedita cumque sed quis quasi eligendi. Illo consectetur neque, ad, reiciendis iste voluptate quae, itaque debitis nobis ex ratione consequatur. Nobis velit consequatur culpa maiores dolore error sint nostrum quidem hic alias.',
     imgSml: 'ncnews-sml.png',
     imgMed: 'ncnews-med.png',
@@ -19,7 +19,7 @@ export const projects = [
   },
   {
     id: 3,
-    title: 'GraphQL Test Project',
+    title: 'GraphQL Test',
     descTest: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolor eum alias asperiores, earum labore pariatur officia sunt expedita cumque sed quis quasi eligendi. Illo consectetur neque, ad, reiciendis iste voluptate quae, itaque debitis nobis ex ratione consequatur. Nobis velit consequatur culpa maiores dolore error sint nostrum quidem hic alias.',
     techList: ['faReact', 'faCss3', 'faGraphQl'],
   },

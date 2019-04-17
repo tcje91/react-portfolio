@@ -10,6 +10,12 @@ $caps-font: 'Oswald', sans-serif;
   transition: ease-in-out 300ms;
 }
 
+@mixin capsHeading {
+  font-family: $caps-font;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
 @mixin mediaSml {
   @media screen and (max-width: 768px) {
     @content;
