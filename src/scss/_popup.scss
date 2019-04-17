@@ -45,9 +45,9 @@
     background: $background-colour;
     padding: 2rem;
     display: flex;
-    // justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
+    overflow: scroll;
   
     &.show {
       transform: translate3d(0, 0, 0);

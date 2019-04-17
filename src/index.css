@@ -122,7 +122,8 @@
   padding: 2rem;
   display: flex;
   align-items: center;
-  flex-flow: column nowrap; }
+  flex-flow: column nowrap;
+  overflow: scroll; }
   .project-details.show {
     transform: translate3d(0, 0, 0); }
   .project-details .close-btn {
