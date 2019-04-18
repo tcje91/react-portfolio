@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 
 const App = () => (
   <div className="App">
+    <div className="bg-image" />
     <Menu />
     <Router>
       <Home path="/" />

@@ -5,7 +5,7 @@
   right: 0;
   height: 100%;
   width: 90px;
-  background: rgba(70, 70, 70, 0.5);
+  background: rgba(66, 69, 75, 0.5);
   overflow: hidden;
   transition: ease-in-out 300ms;
   z-index: 4; }
@@ -86,7 +86,7 @@
   left: 0;
   height: 100vh;
   width: 100vw;
-  background: #2c2c2c;
+  background: #2a2c30;
   opacity: 0;
   z-index: 4;
   visibility: hidden;
@@ -118,7 +118,7 @@
   width: 800px;
   border: #fff solid 3px;
   border-radius: 6px;
-  background: #2c2c2c;
+  background: #2a2c30;
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -191,13 +191,24 @@ html, body, #root {
   min-height: 100%;
   position: relative; }
 
+.bg-image {
+  background: url("./images/japan-bg.jpeg");
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  background-size: cover; }
+
 a {
   color: #fff;
   text-decoration: none; }
 
 body {
   color: #fff;
-  background: #2c2c2c;
+  background: #2a2c30;
   font-family: "Nunito", sans-serif;
   margin: 0;
   height: 100%;
@@ -241,6 +252,7 @@ h1, h2, h3 {
     text-align: center;
     padding: 1rem 1.5rem;
     margin: 1rem;
+    background: rgba(42, 44, 48, 0.7);
     border: #fff solid 2px;
     border-radius: 6px;
     cursor: pointer;
@@ -254,7 +266,7 @@ h1, h2, h3 {
       text-transform: uppercase;
       transition: ease-in-out 300ms; }
     .project-showcase .project-tile:hover {
-      background: #393939; }
+      background: rgba(54, 56, 62, 0.7); }
       .project-showcase .project-tile:hover .project-tile-title {
         color: #21acb9; }
       .project-showcase .project-tile:hover .img-overlay {
@@ -278,7 +290,7 @@ h1, h2, h3 {
       left: 0;
       width: 240px;
       height: 150px;
-      background: #2c2c2c;
+      background: #2a2c30;
       z-index: 2;
       opacity: 0.4;
       transition: ease-in-out 300ms; }
@@ -291,8 +303,7 @@ h1, h2, h3 {
   bottom: 0;
   left: 0;
   width: 100%;
-  text-align: center;
-  background: #2c2c2c; }
+  text-align: center; }
   .footer .icon {
     margin: 0.5rem; }
 
@@ -303,7 +314,7 @@ h1, h2, h3 {
     font-size: 75%; }
   .menu {
     width: 0px;
-    background: rgba(70, 70, 70, 0.9); }
+    background: rgba(66, 69, 75, 0.9); }
     .menu .menu-btn {
       position: fixed; }
   .home .lrg-heading {
@@ -338,10 +349,10 @@ h1, h2, h3 {
     font-size: 80%;
     margin: 0; }
   .menu .menu-btn {
-    background: rgba(44, 44, 44, 0.5);
+    background: rgba(42, 44, 48, 0.5);
     z-index: 2;
     border-radius: 6px; }
     .menu .menu-btn.close {
-      background: rgba(44, 44, 44, 0); }
+      background: rgba(42, 44, 48, 0); }
     .menu .menu-btn .btn-line {
       z-index: 3; } }
