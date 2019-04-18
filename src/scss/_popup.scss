@@ -101,6 +101,27 @@
       margin: auto;
     }
 
+    .url-icons-wrapper {
+      display: flex;
+      justify-content: center;
+      padding-top: 1rem;
+
+      a {
+        z-index: 5;
+
+        .icon {
+          margin: 0 0.5rem;
+          cursor: pointer;
+          
+          @include easeInOut;
+  
+          &:hover {
+            color: $secondary-colour;
+          }
+        }
+      }
+    }
+
     .tech-list {
       text-align: center;
       position: absolute;

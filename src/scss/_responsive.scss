@@ -22,11 +22,6 @@
     }
   }
 
-  .project-details {
-    margin: 0 1rem 0 1rem;
-    max-height: 85vh;
-  }
-
   .img-overlay {
     visibility: hidden;
   }
@@ -49,6 +44,9 @@
   }
 
   .project-details {
+    margin: 0 1rem 0 1rem;
+    padding: 1rem 2rem;
+    max-height: 85vh;
     overflow: scroll;
 
     .img-wrapper-med {

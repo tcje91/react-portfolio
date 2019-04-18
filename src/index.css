@@ -158,6 +158,18 @@
   .project-details .img-wrapper-med {
     width: 480px;
     margin: auto; }
+  .project-details .url-icons-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem; }
+    .project-details .url-icons-wrapper a {
+      z-index: 5; }
+      .project-details .url-icons-wrapper a .icon {
+        margin: 0 0.5rem;
+        cursor: pointer;
+        transition: ease-in-out 300ms; }
+        .project-details .url-icons-wrapper a .icon:hover {
+          color: #21acb9; }
   .project-details .tech-list {
     text-align: center;
     position: absolute;
@@ -296,9 +308,6 @@ h1, h2, h3 {
       position: fixed; }
   .home .lrg-heading {
     margin-top: 10vh; }
-  .project-details {
-    margin: 0 1rem 0 1rem;
-    max-height: 85vh; }
   .img-overlay {
     visibility: hidden; }
   h1, h2, h3 {
@@ -311,6 +320,9 @@ h1, h2, h3 {
   .about .lrg-heading {
     margin-bottom: 1rem; }
   .project-details {
+    margin: 0 1rem 0 1rem;
+    padding: 1rem 2rem;
+    max-height: 85vh;
     overflow: scroll; }
     .project-details .img-wrapper-med {
       width: 280px;

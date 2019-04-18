@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import * as SolidIcons from '@fortawesome/free-solid-svg-icons';
 import BrandIcons from '../misc/icons';
 
 const ProjectDetails = ({ onCloseProject, show, project }) => (
@@ -11,6 +12,10 @@ const ProjectDetails = ({ onCloseProject, show, project }) => (
       </div>
       <h1 className="project-title">{project.title}</h1>
       <p className="project-desc">{project.desc ? project.desc : project.descTest}</p>
+      <div className="url-icons-wrapper">
+        {project.githubUrl && <a href={project.githubUrl} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={BrandIcons.faGithub} className="icon" size="2x" /></a>}
+        {project.hostedUrl && <a href={project.hostedUrl} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={SolidIcons.faExternalLinkAlt} className="icon" size="2x" /></a>}
+      </div>
       <div className="tech-list">
         {project.techList.map(tech => <FontAwesomeIcon icon={BrandIcons[tech]} key={tech} className="icon" size="2x" />)}
       </div>
