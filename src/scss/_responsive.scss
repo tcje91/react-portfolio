@@ -22,8 +22,17 @@
     }
   }
 
-  .img-overlay {
-    visibility: hidden;
+  
+
+  .project-showcase {
+    .project-tile {
+      .img-overlay {
+        visibility: hidden;
+      }
+      .project-tile-title {
+        color: $primary-colour;
+      }
+    }
   }
 
   h1, h2, h3 {

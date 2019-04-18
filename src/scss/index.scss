@@ -103,6 +103,7 @@ h1, h2, h3 {
       font-size: 1.3rem;
       margin-top: 6px;
       margin-bottom: -10px;
+      color: fade-primary(15);
       @include capsHeading;
       @include easeInOut;
     }
@@ -110,7 +111,7 @@ h1, h2, h3 {
     &:hover {
       background: rgba(lighten($background-colour, 5), 0.7);
       .project-tile-title {
-        color: $secondary-colour;
+        color: $primary-colour;
       }
 
       .img-overlay {

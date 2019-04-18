@@ -261,6 +261,7 @@ h1, h2, h3 {
       font-size: 1.3rem;
       margin-top: 6px;
       margin-bottom: -10px;
+      color: #d9d9d9;
       font-family: "Oswald", sans-serif;
       letter-spacing: 0.2rem;
       text-transform: uppercase;
@@ -268,7 +269,7 @@ h1, h2, h3 {
     .project-showcase .project-tile:hover {
       background: rgba(54, 56, 62, 0.7); }
       .project-showcase .project-tile:hover .project-tile-title {
-        color: #21acb9; }
+        color: #fff; }
       .project-showcase .project-tile:hover .img-overlay {
         opacity: 0; }
     .project-showcase .project-tile .project-img-div {
@@ -319,8 +320,10 @@ h1, h2, h3 {
       position: fixed; }
   .home .lrg-heading {
     margin-top: 10vh; }
-  .img-overlay {
+  .project-showcase .project-tile .img-overlay {
     visibility: hidden; }
+  .project-showcase .project-tile .project-tile-title {
+    color: #fff; }
   h1, h2, h3 {
     margin: 0; }
     h1.lrg-heading, h2.lrg-heading, h3.lrg-heading {

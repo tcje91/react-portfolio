@@ -12,6 +12,15 @@ $background-colour: #2a2c30;
 }
 
 $primary-colour: set-primary($background-colour);
+
+@function fade-primary($amount) {
+  @if (lightness($primary-colour) > 40) {
+    @return darken($primary-colour, $amount);
+  } @else {
+    @return lighten($primary-colour, $amount);
+  }
+}
+
 $main-font: 'Nunito', sans-serif;
 $caps-font: 'Oswald', sans-serif;
 
