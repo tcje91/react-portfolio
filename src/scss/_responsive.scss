@@ -1,6 +1,10 @@
 @include mediaSml {
   .content-container {
-      padding: 4rem 2rem 4rem 2rem;
+      padding: 4rem 2rem 2.5rem 2rem;
+  }
+  
+  .footer {
+    font-size: 75%;
   }
 
   .menu {
@@ -45,6 +49,8 @@
   }
 
   .project-details {
+    overflow: scroll;
+
     .img-wrapper-med {
       width: 280px;
       height: auto;
@@ -54,6 +60,11 @@
         width: 100%;
         height: auto;
       }
+    }
+
+    .tech-list {
+      font-size: 2rem;
+      bottom: 30px;
     }
   }
 
