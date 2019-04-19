@@ -257,11 +257,11 @@ h1, h2, h3 {
     position: relative;
     width: 300px;
     text-align: center;
-    padding: 1rem 1.5rem;
-    margin: 1rem;
+    padding: 1rem 1rem;
+    margin: 0.5rem;
     background: rgba(42, 44, 48, 0.7);
     border: rgba(255, 255, 255, 0.5) solid 2px;
-    border-radius: 6px;
+    border-radius: 2px;
     cursor: pointer;
     transition: ease-in-out 300ms; }
     .project-showcase .project-tile .project-tile-title {
@@ -330,7 +330,7 @@ h1, h2, h3 {
   .home .lrg-heading {
     margin-top: 10vh; }
   .project-showcase .project-tile {
-    border-color: rgba(255, 255, 255, 0.8); }
+    border: solid 1px rgba(255, 255, 255, 0.8); }
     .project-showcase .project-tile .img-overlay {
       visibility: hidden; }
     .project-showcase .project-tile .project-tile-title {
@@ -348,7 +348,7 @@ h1, h2, h3 {
     margin: 0 1rem 0 1rem;
     padding: 1rem 2rem;
     min-height: 50vh;
-    max-height: 85vh;
+    max-height: 90vh;
     overflow: scroll; }
     .project-details .tech-list {
       margin-bottom: 0.3rem; }
