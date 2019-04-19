@@ -114,7 +114,7 @@
   transform: translate3d(0, 1000px, 0);
   transition: ease-in-out 300ms;
   z-index: 5;
-  height: 600px;
+  min-height: 600px;
   width: 800px;
   border: #fff solid 3px;
   border-radius: 6px;
@@ -172,14 +172,21 @@
           color: #21acb9; }
   .project-details .tech-list {
     text-align: center;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1rem; }
+  .project-details .tech-list-icons {
+    text-align: center;
     position: absolute;
     width: 100%;
     bottom: 50px;
     left: 0;
     font-size: 4rem;
     opacity: 0.2; }
-    .project-details .tech-list .icon {
-      margin: 0.5rem; }
+    .project-details .tech-list-icons .icon {
+      margin: 0 0.5rem; }
 
 * {
   box-sizing: border-box; }
@@ -253,7 +260,7 @@ h1, h2, h3 {
     padding: 1rem 1.5rem;
     margin: 1rem;
     background: rgba(42, 44, 48, 0.7);
-    border: #fff solid 2px;
+    border: rgba(255, 255, 255, 0.5) solid 2px;
     border-radius: 6px;
     cursor: pointer;
     transition: ease-in-out 300ms; }
@@ -267,7 +274,8 @@ h1, h2, h3 {
       text-transform: uppercase;
       transition: ease-in-out 300ms; }
     .project-showcase .project-tile:hover {
-      background: rgba(54, 56, 62, 0.7); }
+      background: rgba(54, 56, 62, 0.7);
+      border-color: rgba(255, 255, 255, 0.8); }
       .project-showcase .project-tile:hover .project-tile-title {
         color: #fff; }
       .project-showcase .project-tile:hover .img-overlay {
@@ -304,15 +312,16 @@ h1, h2, h3 {
   bottom: 0;
   left: 0;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  font-size: 75%; }
   .footer .icon {
     margin: 0.5rem; }
 
 @media screen and (max-width: 768px) {
+  .App .bg-image {
+    background-position-x: -80px; }
   .content-container {
     padding: 4rem 2rem 2.5rem 2rem; }
-  .footer {
-    font-size: 75%; }
   .menu {
     width: 0px;
     background: rgba(66, 69, 75, 0.9); }
@@ -320,10 +329,12 @@ h1, h2, h3 {
       position: fixed; }
   .home .lrg-heading {
     margin-top: 10vh; }
-  .project-showcase .project-tile .img-overlay {
-    visibility: hidden; }
-  .project-showcase .project-tile .project-tile-title {
-    color: #fff; }
+  .project-showcase .project-tile {
+    border-color: rgba(255, 255, 255, 0.8); }
+    .project-showcase .project-tile .img-overlay {
+      visibility: hidden; }
+    .project-showcase .project-tile .project-tile-title {
+      color: #fff; }
   h1, h2, h3 {
     margin: 0; }
     h1.lrg-heading, h2.lrg-heading, h3.lrg-heading {
@@ -336,8 +347,11 @@ h1, h2, h3 {
   .project-details {
     margin: 0 1rem 0 1rem;
     padding: 1rem 2rem;
+    min-height: 50vh;
     max-height: 85vh;
     overflow: scroll; }
+    .project-details .tech-list {
+      margin-bottom: 0.3rem; }
     .project-details .img-wrapper-med {
       width: 280px;
       height: auto;
@@ -345,9 +359,9 @@ h1, h2, h3 {
       .project-details .img-wrapper-med .project-img-med {
         width: 100%;
         height: auto; }
-    .project-details .tech-list {
+    .project-details .tech-list-icons {
       font-size: 2rem;
-      bottom: 30px; }
+      bottom: 80px; }
   p {
     font-size: 80%;
     margin: 0; }

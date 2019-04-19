@@ -38,7 +38,7 @@
     transform: translate3d(0, 1000px, 0);
     @include easeInOut;
     z-index: 5;
-    height: 600px;
+    min-height: 600px;
     width: 800px;
     border: $primary-colour solid 3px;
     border-radius: 6px;
@@ -124,6 +124,13 @@
 
     .tech-list {
       text-align: center;
+      @include capsHeading;
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .tech-list-icons {
+      text-align: center;
       position: absolute;
       width: 100%;
       bottom: 50px;
@@ -132,7 +139,7 @@
       opacity: 0.2;
 
       .icon {
-        margin: 0.5rem;
+        margin: 0 0.5rem;
       }
     }
   }

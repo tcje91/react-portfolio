@@ -1,10 +1,12 @@
 @include mediaSml {
+  .App {
+    .bg-image {
+      background-position-x: -80px;
+    }
+  }
+
   .content-container {
       padding: 4rem 2rem 2.5rem 2rem;
-  }
-  
-  .footer {
-    font-size: 75%;
   }
 
   .menu {
@@ -26,6 +28,7 @@
 
   .project-showcase {
     .project-tile {
+      border-color: rgba($primary-colour, 0.8);
       .img-overlay {
         visibility: hidden;
       }
@@ -55,8 +58,13 @@
   .project-details {
     margin: 0 1rem 0 1rem;
     padding: 1rem 2rem;
+    min-height: 50vh;
     max-height: 85vh;
     overflow: scroll;
+
+    .tech-list {
+      margin-bottom: 0.3rem;
+    }
 
     .img-wrapper-med {
       width: 280px;
@@ -69,9 +77,9 @@
       }
     }
 
-    .tech-list {
+    .tech-list-icons {
       font-size: 2rem;
-      bottom: 30px;
+      bottom: 80px;
     }
   }
 
