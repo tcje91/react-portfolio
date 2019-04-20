@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as SolidIcons from '@fortawesome/free-solid-svg-icons';
 import BrandIcons from '../misc/icons';
+import LinkIcon from './LinkIcon';
 
 const ProjectDetails = ({ onCloseProject, show, project }) => (
   <div className={`project-details ${show ? 'show' : ''}`}>
@@ -14,8 +15,9 @@ const ProjectDetails = ({ onCloseProject, show, project }) => (
       <p className="tech-list">{project.techListStr}</p>
       <p className="project-desc">{project.desc ? project.desc : project.descTest}</p>
       <div className="url-icons-wrapper">
-        {project.githubUrl && <a href={project.githubUrl} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={BrandIcons.faGithub} className="icon" size="2x" /></a>}
-        {project.hostedUrl && <a href={project.hostedUrl} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={SolidIcons.faExternalLinkAlt} className="icon" size="2x" /></a>}
+        {project.githubUrl && <LinkIcon href={project.githubUrl} icon={BrandIcons.faGithub} />}
+        {project.hostedUrl && <LinkIcon href={project.hostedUrl} icon={SolidIcons.faExternalLinkAlt} />}
+        {project.youtubeUrl && <LinkIcon href={project.youtubeUrl} icon={BrandIcons.faYoutube} />}
       </div>
       <div className="tech-list-icons">
         {project.techList.map(tech => <FontAwesomeIcon icon={BrandIcons[tech]} key={tech} className="icon" size="2x" />)}
