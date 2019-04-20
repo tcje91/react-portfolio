@@ -5,13 +5,13 @@ const NavItems = ({
   showMenu, toggleMenu, path,
 }) => (
   <div className="nav-list">
-    <Link to="/" onClick={toggleMenu} className={`nav-item ${showMenu ? 'open' : ''} ${path === '/' ? 'selected' : ''}`}>Home</Link>
+    <Link to="/" onClick={toggleMenu} className={`nav-item ${showMenu ? 'open' : ''} ${path === '/' ? 'active' : ''}`}>Home</Link>
     <br />
-    <Link to="/work" onClick={toggleMenu} className={`nav-item ${showMenu ? 'open' : ''} ${path === '/work' ? 'selected' : ''}`}>Work</Link>
+    <Link to="/work" onClick={toggleMenu} className={`nav-item ${showMenu ? 'open' : ''} ${path === '/work' ? 'active' : ''}`}>Work</Link>
     <br />
-    <Link to="/about" onClick={toggleMenu} className={`nav-item ${showMenu ? 'open' : ''} ${path === '/about' ? 'selected' : ''}`}>About</Link>
+    <Link to="/about" onClick={toggleMenu} className={`nav-item ${showMenu ? 'open' : ''} ${path === '/about' ? 'active' : ''}`}>About</Link>
     <br />
-    <Link to="/contact" onClick={toggleMenu} className={`nav-item ${showMenu ? 'open' : ''} ${path === '/contact' ? 'selected' : ''}`}>Contact</Link>
+    <Link to="/contact" onClick={toggleMenu} className={`nav-item ${showMenu ? 'open' : ''} ${path === '/contact' ? 'active' : ''}`}>Contact</Link>
   </div>
 );
 

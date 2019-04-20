@@ -63,7 +63,7 @@
   .nav-item.open {
     visibility: visible;
     transform: translate3d(0, 0, 0); }
-  .nav-item.selected {
+  .nav-item.active {
     color: #21acb9; }
   .nav-item:after {
     content: '';
