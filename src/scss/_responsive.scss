@@ -16,6 +16,10 @@
     .menu-btn {
       position: fixed;
     }
+
+    .nav-item:after{
+      display: none;
+    }
   }
 
   .home {

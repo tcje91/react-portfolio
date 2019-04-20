@@ -79,17 +79,32 @@
   transform: translate3d(300px, 0, 0);
   @include easeInOut;
 
-  &:hover {
-    color: $secondary-colour;
-  }
-
   &.open {
     visibility: visible;
     transform: translate3d(0, 0, 0);
   }
 
   &.selected {
-    text-decoration: underline;
+    color: $secondary-colour;
+  }
+
+  &:after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    background: $primary-colour;
+    border-radius: 1px;
+    @include easeInOut;
+  }
+
+
+  &:hover {
+    &:after {
+      width: 110%;
+    }
   }
 
 }
