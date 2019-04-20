@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { projects } from '../data';
 import ProjectTile from './ProjectTile';
 import ProjectDetails from './ProjectDetails';
+import ProjectTile2 from './ProjectTile2';
 
 class Work extends Component {
   state = {
@@ -27,7 +28,7 @@ class Work extends Component {
         </h1>
         <h3 className="med-heading">Some of my recent projects</h3>
         <div className="project-showcase">
-          {projects.map(project => <ProjectTile key={project.id} project={project} onClickProject={this.onClickProject} />)}
+          {projects.map(project => <ProjectTile2 key={project.id} project={project} onClickProject={this.onClickProject} />)}
         </div>
         <div className={`overlay ${selectedProject ? 'show' : ''}`} />
         <div className={`popup-container ${selectedProject ? 'show' : ''}`}>

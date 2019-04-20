@@ -152,6 +152,60 @@ h1, h2, h3 {
     }
     
   }
+
+  .project-tile-2 {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3rem;
+    border-radius: 5px;
+
+    .project-img-2 {
+      width: 100%;
+      @include easeInOut;
+    }
+
+    .tile-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba($background-colour, 0);
+      @include easeInOut;
+    }
+
+    .project-tile-title-2 {
+      position: absolute;
+      top: 37%;
+      text-align: center;
+      z-index: 3;
+      font-size: 1.3rem;
+      font-weight: 600;
+      transform: translateY(400px);
+      @include capsHeading;
+      @include easeInOut;
+    }
+  }
+
+  :hover {
+    .project-img-2 {
+      transform: scale(1.1);
+    }
+
+    .tile-overlay {
+      background: rgba($background-colour, 0.7);
+    }
+
+    .project-tile-title-2 {
+      transform: translateY(0);
+    }
+  }
 }
 
 .footer {

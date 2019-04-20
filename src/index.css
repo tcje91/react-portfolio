@@ -312,6 +312,46 @@ h1, h2, h3 {
       z-index: 2;
       opacity: 0.4;
       transition: ease-in-out 300ms; }
+  .project-showcase .project-tile-2 {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3rem;
+    border-radius: 5px; }
+    .project-showcase .project-tile-2 .project-img-2 {
+      width: 100%;
+      transition: ease-in-out 300ms; }
+    .project-showcase .project-tile-2 .tile-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(42, 44, 48, 0);
+      transition: ease-in-out 300ms; }
+    .project-showcase .project-tile-2 .project-tile-title-2 {
+      position: absolute;
+      top: 37%;
+      text-align: center;
+      z-index: 3;
+      font-size: 1.3rem;
+      font-weight: 600;
+      transform: translateY(400px);
+      font-family: "Oswald", sans-serif;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
+      transition: ease-in-out 300ms; }
+  .project-showcase :hover .project-img-2 {
+    transform: scale(1.1); }
+  .project-showcase :hover .tile-overlay {
+    background: rgba(42, 44, 48, 0.7); }
+  .project-showcase :hover .project-tile-title-2 {
+    transform: translateY(0); }
 
 .footer {
   position: absolute;
