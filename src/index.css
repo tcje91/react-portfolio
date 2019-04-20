@@ -73,7 +73,6 @@
     right: 0;
     bottom: 10px;
     background: #fff;
-    border-radius: 1px;
     transition: ease-in-out 300ms; }
   .nav-item:hover:after {
     width: 110%; }
