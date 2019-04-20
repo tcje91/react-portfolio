@@ -40,6 +40,24 @@
         color: $primary-colour;
       }
     }
+
+    .project-tile-2 {
+      height: auto;
+      margin: 1rem 0;
+
+      .tile-overlay {
+        display: none;
+      }
+  
+      .project-tile-title-2 {
+        font-size: 1.3rem;
+        top: 40%;
+        transform: translateY(0);
+        background: rgba($background-colour, 0.8);
+        padding: 0.5rem 1rem;
+        box-shadow: 3px 3px 6px rgba($background-colour, 1);
+      }
+    }
   }
 
   h1, h2, h3 {

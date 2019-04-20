@@ -321,8 +321,8 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0.3rem;
-    border-radius: 5px; }
+    margin: 1rem;
+    border-radius: 12px; }
     .project-showcase .project-tile-2 .project-img-2 {
       width: 100%;
       transition: ease-in-out 300ms; }
@@ -336,10 +336,11 @@ h1, h2, h3 {
       transition: ease-in-out 300ms; }
     .project-showcase .project-tile-2 .project-tile-title-2 {
       position: absolute;
-      top: 37%;
+      margin: 0;
+      top: 42%;
       text-align: center;
       z-index: 3;
-      font-size: 1.3rem;
+      font-size: 2rem;
       font-weight: 600;
       transform: translateY(400px);
       font-family: "Oswald", sans-serif;
@@ -386,6 +387,18 @@ h1, h2, h3 {
       visibility: hidden; }
     .project-showcase .project-tile .project-tile-title {
       color: #fff; }
+  .project-showcase .project-tile-2 {
+    height: auto;
+    margin: 1rem 0; }
+    .project-showcase .project-tile-2 .tile-overlay {
+      display: none; }
+    .project-showcase .project-tile-2 .project-tile-title-2 {
+      font-size: 1.3rem;
+      top: 40%;
+      transform: translateY(0);
+      background: rgba(42, 44, 48, 0.8);
+      padding: 0.5rem 1rem;
+      box-shadow: 3px 3px 6px #2a2c30; }
   h1, h2, h3 {
     margin: 0; }
     h1.lrg-heading, h2.lrg-heading, h3.lrg-heading {

@@ -162,8 +162,8 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0.3rem;
-    border-radius: 5px;
+    margin: 1rem;
+    border-radius: 12px;
 
     .project-img-2 {
       width: 100%;
@@ -182,10 +182,11 @@ h1, h2, h3 {
 
     .project-tile-title-2 {
       position: absolute;
-      top: 37%;
+      margin: 0;
+      top: 42%;
       text-align: center;
       z-index: 3;
-      font-size: 1.3rem;
+      font-size: 2rem;
       font-weight: 600;
       transform: translateY(400px);
       @include capsHeading;
