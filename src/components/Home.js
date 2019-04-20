@@ -2,7 +2,6 @@ import React from 'react';
 import * as BrandIcons from '@fortawesome/free-brands-svg-icons';
 import LinkIcon from './LinkIcon';
 
-
 const Home = () => (
   <div className="home content-container">
     <h1 className="lrg-heading">

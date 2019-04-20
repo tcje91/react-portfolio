@@ -8,6 +8,9 @@ const Footer = () => (
     <FontAwesomeIcon icon={BrandIcons.faReact} size="2x" className="icon" />
     <FontAwesomeIcon icon={BrandIcons.faSass} size="2x" className="icon" />
     <FontAwesomeIcon icon={BrandIcons.faHtml5} size="2x" className="icon" />
+    ©
+    {' '}
+    {new Date().getFullYear()}
   </div>
 );
 
