@@ -314,15 +314,14 @@ h1, h2, h3 {
       transition: ease-in-out 300ms; }
   .project-showcase .project-tile-2 {
     position: relative;
-    width: 400px;
-    height: 250px;
+    width: 30%;
+    height: auto;
     overflow: hidden;
     align-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
-    border-radius: 12px; }
+    margin: 0.8rem; }
     .project-showcase .project-tile-2 .project-img-2 {
       width: 100%;
       transition: ease-in-out 300ms; }
@@ -381,24 +380,28 @@ h1, h2, h3 {
       display: none; }
   .home .lrg-heading {
     margin-top: 10vh; }
-  .project-showcase .project-tile {
-    border: solid 1px rgba(255, 255, 255, 0.8); }
-    .project-showcase .project-tile .img-overlay {
-      visibility: hidden; }
-    .project-showcase .project-tile .project-tile-title {
-      color: #fff; }
-  .project-showcase .project-tile-2 {
-    height: auto;
-    margin: 1rem 0; }
-    .project-showcase .project-tile-2 .tile-overlay {
-      display: none; }
-    .project-showcase .project-tile-2 .project-tile-title-2 {
-      font-size: 1.3rem;
-      top: 40%;
-      transform: translateY(0);
-      background: rgba(42, 44, 48, 0.8);
-      padding: 0.5rem 1rem;
-      box-shadow: 3px 3px 6px #2a2c30; }
+  .project-showcase {
+    justify-content: center; }
+    .project-showcase .project-tile {
+      border: solid 1px rgba(255, 255, 255, 0.8); }
+      .project-showcase .project-tile .img-overlay {
+        visibility: hidden; }
+      .project-showcase .project-tile .project-tile-title {
+        color: #fff; }
+    .project-showcase .project-tile-2 {
+      height: auto;
+      margin: 1rem 0;
+      width: 100%;
+      max-width: 500px; }
+      .project-showcase .project-tile-2 .tile-overlay {
+        display: none; }
+      .project-showcase .project-tile-2 .project-tile-title-2 {
+        font-size: 1.3rem;
+        top: 40%;
+        transform: translateY(0);
+        background: #2a2c30;
+        padding: 0.5rem 1rem;
+        box-shadow: 3px 3px 6px rgba(42, 44, 48, 0.8); }
   h1, h2, h3 {
     margin: 0; }
     h1.lrg-heading, h2.lrg-heading, h3.lrg-heading {

@@ -2,6 +2,7 @@
 
 $secondary-colour: #21acb9;
 $background-colour: #2a2c30;
+$background-img-opacity: 0.5;
 
 @function set-primary($colour) {
   @if (lightness($colour) > 40) {

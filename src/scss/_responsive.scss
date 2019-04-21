@@ -31,6 +31,8 @@
   
 
   .project-showcase {
+
+    justify-content: center;
     .project-tile {
       border: solid 1px rgba($primary-colour, 0.8);
       .img-overlay {
@@ -44,6 +46,8 @@
     .project-tile-2 {
       height: auto;
       margin: 1rem 0;
+      width: 100%;
+      max-width: 500px;
 
       .tile-overlay {
         display: none;
@@ -53,9 +57,9 @@
         font-size: 1.3rem;
         top: 40%;
         transform: translateY(0);
-        background: rgba($background-colour, 0.8);
+        background: $background-colour;
         padding: 0.5rem 1rem;
-        box-shadow: 3px 3px 6px rgba($background-colour, 1);
+        box-shadow: 3px 3px 6px rgba($background-colour, 0.8);
       }
     }
   }

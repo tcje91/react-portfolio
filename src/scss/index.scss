@@ -23,7 +23,7 @@ html, body, #root {
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: 0.5;
+  opacity: $background-img-opacity;
   background-size: cover;
 }
 
@@ -155,15 +155,14 @@ h1, h2, h3 {
 
   .project-tile-2 {
     position: relative;
-    width: 400px;
-    height: 250px;
+    width: 30%;
+    height: auto;
     overflow: hidden;
     align-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
-    border-radius: 12px;
+    margin: 0.8rem;
 
     .project-img-2 {
       width: 100%;
