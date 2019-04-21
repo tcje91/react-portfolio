@@ -5,7 +5,7 @@ export const projects = [
     desc: '"Lemonade Tycoon Simulator Extreme 2019 Game of the Year Edition", or "Lemonade Tycoon" is a resource management game created as a hobby during my time on the Northcoders course. The player purchases lemons, squeezes them into lemonade and sells them for profit, gradually unlocking upgrades to boost productivity. Made in React and hosted on Heroku.',
     descTest: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolor eum alias asperiores, earum labore pariatur officia sunt expedita cumque sed quis quasi eligendi. Illo consectetur neque, ad, reiciendis iste voluptate quae, itaque debitis nobis ex ratione consequatur. Nobis velit consequatur culpa maiores dolore error sint nostrum quidem hic alias.',
     imgSml: 'lemonade-sml.png',
-    imgMed: 'lemonade-med.png',
+    imgMed: 'lemonade-lrg.png',
     techList: ['faReact', 'faCss3'],
     techListStr: 'React | CSS',
     githubUrl: 'https://github.com',
@@ -26,7 +26,8 @@ export const projects = [
   {
     id: 3,
     title: 'GraphQL Film App',
-    descTest: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolor eum alias asperiores, earum labore pariatur officia sunt expedita cumque sed quis quasi eligendi. Illo consectetur neque, ad, reiciendis iste voluptate quae, itaque debitis nobis ex ratione consequatur. Nobis velit consequatur culpa maiores dolore error sint nostrum quidem hic alias.',
+    descTest: 'A full stack project, created to gain experience with GraphQL, that allows users to view related information about films and directors, as well as add their own films. The app features an Express server back end, utilising GraphQL, and a MongoDB Atlas instance for a database. It also has a simple front end made in React, using Apollo to interface with the API.',
+    imgMed: 'graphql-test-lrg.png',
     techList: ['faReact', 'faGraphQl', 'faNodeJs'],
     techListStr: 'React | GraphQL | Node.js',
     githubUrl: 'https://github.com',

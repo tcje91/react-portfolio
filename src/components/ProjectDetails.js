@@ -9,7 +9,7 @@ const ProjectDetails = ({ onCloseProject, show, project }) => (
     {project && (
     <div>
       <div className="img-wrapper-med">
-        <img src={`/images/${project.imgMed ? project.imgMed : 'lemonade-med.png'}`} alt="img" className="project-img-med" />
+        <img src={`/images/${project.imgMed ? project.imgMed : 'lemonade-lrg.png'}`} alt={`${project.title}`} />
       </div>
       <h1 className="project-title">{project.title}</h1>
       <p className="tech-list">{project.techListStr}</p>

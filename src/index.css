@@ -167,6 +167,8 @@
   .project-details .img-wrapper-med {
     width: 480px;
     margin: auto; }
+    .project-details .img-wrapper-med img {
+      width: 100%; }
   .project-details .url-icons-wrapper {
     display: flex;
     justify-content: center;
@@ -416,6 +418,7 @@ h1, h2, h3 {
     padding: 1rem 2rem;
     min-height: 50vh;
     max-height: 90vh;
+    max-width: 600px;
     overflow: scroll; }
     .project-details .tech-list {
       margin-bottom: 0.3rem; }
