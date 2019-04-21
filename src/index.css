@@ -314,7 +314,7 @@ h1, h2, h3 {
       transition: ease-in-out 300ms; }
   .project-showcase .project-tile-2 {
     position: relative;
-    width: 30%;
+    width: 400px;
     height: auto;
     overflow: hidden;
     align-content: center;
