@@ -40,8 +40,7 @@
     z-index: 5;
     min-height: 600px;
     width: 800px;
-    border: $primary-colour solid 3px;
-    border-radius: 6px;
+    border: rgba($primary-colour, 0.5) solid 1px;
     background: $background-colour;
     padding: 2rem;
     display: flex;

@@ -125,8 +125,7 @@
   z-index: 5;
   min-height: 600px;
   width: 800px;
-  border: #fff solid 3px;
-  border-radius: 6px;
+  border: rgba(255, 255, 255, 0.5) solid 1px;
   background: #2a2c30;
   padding: 2rem;
   display: flex;
@@ -348,12 +347,12 @@ h1, h2, h3 {
       letter-spacing: 0.2rem;
       text-transform: uppercase;
       transition: ease-in-out 300ms; }
-  .project-showcase :hover .project-img-2 {
-    transform: scale(1.1); }
-  .project-showcase :hover .tile-overlay {
-    background: rgba(42, 44, 48, 0.7); }
-  .project-showcase :hover .project-tile-title-2 {
-    transform: translateY(0); }
+    .project-showcase .project-tile-2:hover .project-img-2 {
+      transform: scale(1.1); }
+    .project-showcase .project-tile-2:hover .tile-overlay {
+      background: rgba(42, 44, 48, 0.7); }
+    .project-showcase .project-tile-2:hover .project-tile-title-2 {
+      transform: translateY(0); }
 
 .footer {
   position: absolute;

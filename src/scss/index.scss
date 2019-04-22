@@ -191,21 +191,22 @@ h1, h2, h3 {
       @include capsHeading;
       @include easeInOut;
     }
+    
+    &:hover {
+      .project-img-2 {
+        transform: scale(1.1);
+      }
+  
+      .tile-overlay {
+        background: rgba($background-colour, 0.7);
+      }
+  
+      .project-tile-title-2 {
+        transform: translateY(0);
+      }
+    }
   }
 
-  :hover {
-    .project-img-2 {
-      transform: scale(1.1);
-    }
-
-    .tile-overlay {
-      background: rgba($background-colour, 0.7);
-    }
-
-    .project-tile-title-2 {
-      transform: translateY(0);
-    }
-  }
 }
 
 .footer {
