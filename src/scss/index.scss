@@ -66,6 +66,9 @@ h1, h2, h3 {
 }
 
 .home {
+  display: flex;
+  flex-flow: column nowrap;
+
   .lrg-heading {
     margin-top: 20vh;
   }
@@ -77,6 +80,35 @@ h1, h2, h3 {
 
     &:hover {
       color: $secondary-colour;
+    }
+  }
+
+  .btn-bar {
+    align-self: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    .nav-btn {
+      @include capsHeading;
+      padding: 0.3rem 1rem;
+      width: 12rem;
+      text-align: center;
+      border: 1px solid $primary-colour;
+      @include easeInOut;
+
+      &.left {
+        border-right: none;
+      }
+
+      &.right {
+        border-left: none;
+      }
+
+      &:hover {
+        background: rgba($primary-colour, 0.2);
+      }
     }
   }
 }

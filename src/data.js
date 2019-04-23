@@ -14,7 +14,8 @@ export const projects = [
   {
     id: 4,
     title: 'Gaffr',
-    descTest: 'A team project, "Gaffr" is a mobile application designed to make property hunting more approachable. Inspired by dating apps, tenants swipe on properties uploaded by landlords to find the home of their dreams! The app was written in TypeScript, using React Native for the mobile application and Google Firebase and Firestore for authentication and data storage respectively.',
+    desc: 'A team project, "Gaffr" is a mobile application designed to make property hunting more approachable. Inspired by dating apps, tenants swipe on properties uploaded by landlords to find the home of their dreams! The app was written in TypeScript, using React Native for the mobile application and Google Firebase and Firestore for authentication and data storage respectively.',
+    descTest: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolor eum alias asperiores, earum labore pariatur officia sunt expedita cumque sed quis quasi eligendi. Illo consectetur neque, ad, reiciendis iste voluptate quae, itaque debitis nobis ex ratione consequatur. Nobis velit consequatur culpa maiores dolore error sint nostrum quidem hic alias.',
     imgMed: 'gaffr-lrg.png',
     techList: ['faReact', 'faCss3'],
     techListStr: 'React Native | TypeScript | Firebase',
@@ -37,8 +38,9 @@ export const projects = [
   {
     id: 3,
     title: 'GraphQL Film App',
-    descTest: 'A full stack project, created to gain experience with GraphQL, that allows users to view related information about films and directors, as well as add their own films. The app features an Express server back end, utilising GraphQL, and a MongoDB Atlas instance for a database. It also has a simple front end made in React, using Apollo to interface with the API.',
+    desc: 'A full stack project, created to gain experience with GraphQL, that allows users to view related information about films and directors, as well as add their own films. The app features an Express server back end, utilising GraphQL, and a MongoDB Atlas instance for a database. It also has a simple front end made in React, using Apollo to interface with the API.',
     imgMed: 'graphql-test-lrg.png',
+    descTest: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolor eum alias asperiores, earum labore pariatur officia sunt expedita cumque sed quis quasi eligendi. Illo consectetur neque, ad, reiciendis iste voluptate quae, itaque debitis nobis ex ratione consequatur. Nobis velit consequatur culpa maiores dolore error sint nostrum quidem hic alias.',
     techList: ['faReact', 'faGraphQl', 'faNodeJs'],
     techListStr: 'React | GraphQL | Node.js',
     githubUrl: 'https://github.com',

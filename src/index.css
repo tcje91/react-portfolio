@@ -247,15 +247,38 @@ h1, h2, h3 {
   height: 100%;
   padding: 8rem; }
 
-.home .lrg-heading {
-  margin-top: 20vh; }
-
-.home .icon {
-  margin: 0.5rem;
-  transition: ease-in-out 300ms;
-  cursor: pointer; }
-  .home .icon:hover {
-    color: #21acb9; }
+.home {
+  display: flex;
+  flex-flow: column nowrap; }
+  .home .lrg-heading {
+    margin-top: 20vh; }
+  .home .icon {
+    margin: 0.5rem;
+    transition: ease-in-out 300ms;
+    cursor: pointer; }
+    .home .icon:hover {
+      color: #21acb9; }
+  .home .btn-bar {
+    align-self: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem; }
+    .home .btn-bar .nav-btn {
+      font-family: "Oswald", sans-serif;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
+      padding: 0.3rem 1rem;
+      width: 12rem;
+      text-align: center;
+      border: 1px solid #fff;
+      transition: ease-in-out 300ms; }
+      .home .btn-bar .nav-btn.left {
+        border-right: none; }
+      .home .btn-bar .nav-btn.right {
+        border-left: none; }
+      .home .btn-bar .nav-btn:hover {
+        background: rgba(255, 255, 255, 0.2); }
 
 .project-showcase {
   display: flex;
@@ -381,6 +404,9 @@ h1, h2, h3 {
       display: none; }
   .home .lrg-heading {
     margin-top: 10vh; }
+  .home .btn-bar .nav-btn {
+    width: 6rem;
+    font-size: 75%; }
   .project-showcase {
     justify-content: center; }
     .project-showcase .project-tile {
