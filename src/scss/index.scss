@@ -93,21 +93,25 @@ h1, h2, h3 {
     .nav-btn {
       @include capsHeading;
       padding: 0.3rem 1rem;
-      width: 12rem;
+      width: 16rem;
       text-align: center;
-      border: 1px solid $primary-colour;
+      border: 1px solid rgba($primary-colour, 0.6);
+      background: rgba($primary-colour, 0.05);
       @include easeInOut;
 
       &.left {
-        border-right: none;
+        border-right-color: rgba($primary-colour, 0);
+        margin-right: -1px;
       }
 
       &.right {
-        border-left: none;
+        border-left-color: rgba($primary-colour, 0);
+        margin-left: -1px;
       }
 
       &:hover {
         background: rgba($primary-colour, 0.2);
+        border-color: $primary-colour;
       }
     }
   }
